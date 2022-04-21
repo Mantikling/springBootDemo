@@ -89,7 +89,7 @@ class StudentServiceTest {
         // then
         assertThatThrownBy(() -> underTest.deleteStudent(studentId))
                 .isInstanceOf(StudentNotFoundException.class)
-                .hasMessageContaining("Student with id " + studentId + " does not exists");
+                .hasMessageContaining("Student with id " + studentId + " does not exists.");
         verify(studentRepository, never()).deleteById(any());
     }
 }
