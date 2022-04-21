@@ -9,11 +9,18 @@ import javax.validation.constraints.NotNull;
 
 @AllArgsConstructor
 @ToString
-@Data
+@Setter
+@Getter
 @EqualsAndHashCode
 @NoArgsConstructor
 @Entity
 public class Student {
+
+    public Student(String name, String email, Gender gender) {
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
+    }
     @Id
     @SequenceGenerator(
             name = "student_sequence",

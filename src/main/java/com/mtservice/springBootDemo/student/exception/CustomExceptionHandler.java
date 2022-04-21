@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.HashMap;
 import java.util.Map;
 
+//TODO implement exceptionHandler to display entity validation messagre in frontend
 //@ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 

@@ -4,6 +4,7 @@ import com.mtservice.springBootDemo.student.exception.BadRequestException;
 import com.mtservice.springBootDemo.student.exception.StudentNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
+
     public void addStudent(Student student) {
         //check if email is taken
         if (studentRepository.selectExistsEmail(student.getEmail())) {
@@ -26,6 +28,7 @@ public class StudentService {
         studentRepository.save(student);
     }
 
+    @Transactional
     public void deleteStudent(Long studentId) {
         //check if student exists
         if (!studentRepository.existsById(studentId)) {
