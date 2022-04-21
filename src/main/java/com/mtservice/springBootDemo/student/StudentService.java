@@ -33,7 +33,7 @@ public class StudentService {
         //check if student exists
         if (!studentRepository.existsById(studentId)) {
             throw new StudentNotFoundException(
-                    "Student with id " + studentId + " does not exists");
+                    "Student with id " + studentId + " does not exists.");
         }
         studentRepository.deleteById(studentId);
     }
