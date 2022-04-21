@@ -8,8 +8,8 @@ on:
 
 env:
   POSTGRESQL_VERSION: 14.2
-  POSTGRESQL_DB: mtservice
-  POSTGRESQL_USER: postgres
+  POSTGRESQL_DB: springbootdemo
+  POSTGRESQL_USER: mtservice
   POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.17
 
