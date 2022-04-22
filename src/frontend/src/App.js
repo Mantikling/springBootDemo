@@ -207,7 +207,7 @@ function App() {
                   {renderStudents()}
                 </div>
               </Content>
-              <Footer style={{ textAlign: 'center' }}>MTService unlimited 2021</Footer>
+              <Footer style={{ textAlign: 'center' }}>MTService limited 2022</Footer>
             </Layout>
           </Layout>
 }
