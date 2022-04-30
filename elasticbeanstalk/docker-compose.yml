@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   backend:
-    image: "mantikling/spring-react-fullstack:30.4.2022.16.19.33"
+    image: "mantikling/spring-react-fullstack:30.4.2022.16.26.19"
     ports:
       - "80:8080"
     restart: "always"
