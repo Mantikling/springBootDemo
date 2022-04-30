@@ -207,7 +207,7 @@ function App() {
                   {renderStudents()}
                 </div>
               </Content>
-              <Footer style={{ textAlign: 'center' }}>MTService limited April 2022</Footer>
+              <Footer style={{ textAlign: 'center' }}>MTService Ltd. April 2022</Footer>
             </Layout>
           </Layout>
 }

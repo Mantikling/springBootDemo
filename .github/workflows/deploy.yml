@@ -12,7 +12,7 @@ env:
   POSTGRESQL_DB: springbootdemo
   POSTGRESQL_USER: mtservice
   POSTGRESQL_PASSWORD: password
-  # Java
+  # Java 17
   JAVA_VERSION: 1.17
   # DockerHub
   DOCKER_HUB_USERNAME: mantikling
