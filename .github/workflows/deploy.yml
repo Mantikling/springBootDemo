@@ -18,7 +18,7 @@ env:
   DOCKER_HUB_USERNAME: mantikling
   # AWS & Elastic Bean Stalk
   AWS_REGION: eu-west-2
-  EB_ENVIRONMENT_NAME: Springreactfullstack-env-1
+  EB_ENVIRONMENT_NAME: Springreactfullstack-env
   EB_APPLICATION_NAME: spring-react-fullstack
   EB_DEPLOYMENT_PACKAGE: elasticbeanstalk/docker-compose.yml
 
@@ -109,7 +109,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          text: ':tada: :arrow_right: http://springreactfullstack-env-1.eba-bmhmftyh.eu-west-2.elasticbeanstalk.com//'
+          text: ':tada: :arrow_right: http://springreactfullstack-env.eba-bmhmftyh.eu-west-2.elasticbeanstalk.com//'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
